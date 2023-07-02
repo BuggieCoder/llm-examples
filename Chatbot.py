@@ -6,8 +6,7 @@ import streamlit as st
    
 st.title("💬 Welcome to California Drinking Water Regbot")
 if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "I am a chatbot capable of answering questions about 
-    California Drinking Water Regulation. How may I be of assisstance?"}]
+    st.session_state["messages"] = [{"role": "assistant", "content": "I am a chatbot capable of answering questions about California Drinking Water Regulation. How may I be of assisstance?"}]
 
 for msg in st.session_state.messages:
     st.chat_message(msg["role"]).write(msg["content"])
